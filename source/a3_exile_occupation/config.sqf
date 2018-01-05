@@ -210,6 +210,7 @@ SC_SpawnHeliCrashGuards			= true;						// true if you want to enable AI guards
 SC_numberofHeliCrashes      	= 5;						// if SC_occupyHeliCrashes = true spawn this many Heli Crashes
 SC_HeliCrashGuards          	= 6;                    	// number of AI to spawn at each crate
 SC_HeliCrashGuardsRandomize 	= true;                 	// Use a random number of guards up to a maximum = SC_HeliCrashGuards (so between 1 and SC_HeliCrashGuards)
+SC_HeliCrashMarkers				= true;						// true if you want to have markers on the Heli Crashes
 
 // Array of possible common items to go in heli crash crates ["classname",fixed amount,random amount] NOT INCLUDING WEAPONS
 // ["HandGrenade",0,2] this example would add between 0 and 2 HandGrenade to the crate (fixed 0 plus 0-2 random)
@@ -327,6 +328,7 @@ SC_occupyHeliFixedPositions		= [
 
 // Settings for roaming seaborne AI (non armed boats will just sail around)
 SC_maxNumberofBoats		    = 1;
+SC_occupySeaVehicleIgnoreCount		= false;	// true if you want spawn vehicles regardless of overall AI count
 
 // Array of boats which can be used by AI patrols (the number next to next vehicle is the maximum amount of that class allowed, 0 for no limit)
 SC_BoatClassToUse 		    =   [	
@@ -338,7 +340,7 @@ SC_BoatClassToUse 		    =   [
 								
 SC_occupyBoatUseFixedPos		= false;	// True if you want to specify the patrol positions and radius of the area to patrol / false for random
 
-											// if you set SC_maxNumberofHelis higher than the number of static positions, the remainder will be random
+											// if you set SC_maxNumberofBoats higher than the number of static positions, the remainder will be random
 											// they will also ignore any blacklisted areas
 SC_occupyBoatFixedPositions		= [
                                     [[200,200,0],2000,"Tanoa"],	// [[x,y,z],radius,"mapname"] leave no spaces between 
@@ -454,9 +456,16 @@ if (worldName == 'Chernarus' AND SC_useMapOverrides) then
 
 if (worldName == 'Tanoa' AND SC_useMapOverrides) then 
 { 
-    SC_useApexClasses       	= true;
-	SC_maxAIcount				= 80;
+    SC_maxAIcount				= 80;
+	SC_useApexClasses       	= true;
 	
+};
+
+if (worldName == 'Malden' AND SC_useMapOverrides) then 
+{ 
+	SC_maxAIcount				= 70;
+	SC_useApexClasses           = false; 
+
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
