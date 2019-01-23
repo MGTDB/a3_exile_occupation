@@ -87,10 +87,12 @@ SC_occupyPlacesSurvivors		= true;						// true if you want a chance to spawn sur
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SC_occupyTraderDetails      	= [
-									//["Tanoa","Lifou Traders",[7317,7217,0],"trader1.sqf",true],
-									//["Tanoa","Lijnhaven Traders",[11580,2051,0],"trader1.sqf",true],
-									//["Napf","Hafen Traders",[9286,17606,0],"trader1.sqf",true]
-								  ];  //["mapname","Name",[x,y,z],"filename",true] trader name, location, safezone true/false
+									//["mapname", "Name", [x,y,z], "filename", true, trader name, location, safezone true/false, safezone radius]
+									//["Tanoa", "Lifou Traders", [7317,7217,0], "trader1.sqf", true, 175],
+									//["Tanoa", "Lijnhaven Traders", [11580,2051,0], "trader1.sqf", true, 175],
+									//["Napf", "Hafen Traders", [9286,17606,0], "trader1.sqf", true, 175],
+									["Chernarus", "Cherno Test Traders", [7317,7217,0], "trader1.sqf", true, 250]
+								  ];
         	
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //	Occupy Static Setup

@@ -1,6 +1,6 @@
 # Exile Occupation (a3_exile_occupation)
 
-![v69 New Features](https://img.shields.io/badge/v69-New%20Features-red.svg) ![Arma 1.72](https://img.shields.io/badge/Arma-1.72-blue.svg) ![Exile 1.0.3 Lemon](https://img.shields.io/badge/Exile-1.0.3%20Lemon-C72651.svg) 
+![v71 New Features](https://img.shields.io/badge/v71-New%20Features-red.svg) ![Arma 1.88](https://img.shields.io/badge/Arma-1.88-blue.svg) ![Exile 1.0.4 Pineapple](https://img.shields.io/badge/Exile-1.0.4%20Pineapple-C72651.svg) 
 
 WTF is Occupation?
 An AI spawner and monitor to be used in conjunction with DMS and will not work without it:
@@ -25,4 +25,4 @@ This work is protected by [Creative Commons Attribution-NonCommercial-ShareAlike
 Anyone wishing to donate can do so here http://exileyorkshire.co.uk/
 All donations go towards coffee to keep me awake :)
 
-### Updated and modified by [FPS]kuplion
+### Updated and modified by [FPS]kuplion, plus a number of community fixes.
